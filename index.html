@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProBG Remover - AI Background Remover</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Pro<span>BG</span> Remover</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <h1>Remove Image Backgrounds <span>Instantly</span></h1>
+        <p>AI-powered, lightning fast, and 100% free. Upload your image and get a transparent background in seconds.</p>
+    </header>
+    <main>
+        <section class="upload-section">
+            <div class="upload-box" id="uploadBox">
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <div class="upload-icon">
+                    <svg width="60" height="60" fill="none" stroke="currentColor" stroke-width="2"><path d="M30 45V15M30 15l-9 9M30 15l9 9"/><rect x="10" y="45" width="40" height="10" rx="5"/></svg>
+                </div>
+                <p class="upload-text">Drag & drop your image here<br>or <span class="browse-btn" id="browseBtn">Browse</span></p>
+                <p class="upload-hint">Supported: JPG, PNG, WEBP, GIF</p>
+            </div>
+            <div class="preview-area" id="previewArea" style="display:none;">
+                <div class="preview-img-container">
+                    <img id="previewImg" src="" alt="Preview">
+                </div>
+                <div class="preview-actions">
+                    <button class="remove-bg-btn" id="removeBgBtn">Remove Background</button>
+                    <button class="reset-btn" id="resetBtn">Reset</button>
+                </div>
+            </div>
+            <div class="result-area" id="resultArea" style="display:none;">
+                <div class="result-img-container">
+                    <img id="resultImg" src="" alt="Result">
+                </div>
+                <a id="downloadBtn" class="download-btn" download="no-bg.png">Download PNG</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 ProBG Remover. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
